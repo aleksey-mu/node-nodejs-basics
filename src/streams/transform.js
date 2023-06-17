@@ -1,5 +1,8 @@
 const transform = async () => {
-    // Write your code here 
+  process.stdin.setEncoding('utf-8');
+  process.stdin.on('data', (data) => {
+    process.stdout.write(data.split('').reverse().join(''));
+  });
 };
 
 await transform();
