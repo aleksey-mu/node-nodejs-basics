@@ -8,7 +8,7 @@ const transform = async () => {
 
   const reverseTransform = new Transform({
     transform(chunk, encoding, callback) {
-      callback(null, chunk.toString().trim().split('').reverse().join(''));
+      callback(null, `${chunk.toString().trim().split('').reverse().join('')}\n`);
     },
   });
 
