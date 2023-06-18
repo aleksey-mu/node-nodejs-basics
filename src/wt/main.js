@@ -11,7 +11,7 @@ const performCalculations = async () => {
 
   for (let i = 0; i < threadCount; i++) {
     const numberToCheck = startNumber;
-    threads.add(new Worker('./worker.js', { workerData: { numberToCheck } }));
+    threads.add(new Worker('./src/wt/worker.js', { workerData: { numberToCheck } }));
     startNumber += 1;
   }
 

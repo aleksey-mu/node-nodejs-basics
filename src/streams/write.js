@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 
 const write = async () => {
-  const ws = fs.createWriteStream('./files/fileToWrite.txt', 'utf-8');
+  const ws = fs.createWriteStream('./src/streams/files/fileToWrite.txt', 'utf-8');
 
   process.stdout.write('Input something here: \n');
   process.stdin.on('data', (data) => {

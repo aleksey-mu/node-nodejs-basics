@@ -1,9 +1,9 @@
-import * as fs from "node:fs";
+import * as fs from 'node:fs';
 
 const copy = async () => {
-  const filesPath = "./files";
-  const copyPath = "./files_copy";
-  const errorMsg = "FS operation failed";
+  const filesPath = './src/fs/files';
+  const copyPath = './src/fs/files_copy';
+  const errorMsg = 'FS operation failed';
 
   fs.access(filesPath, (err) => {
     if (err) {
@@ -25,7 +25,7 @@ const copy = async () => {
         if (err) {
           console.error(err);
         }
-        console.log("Files copied!");
+        console.log('Files copied!');
       });
     });
   });

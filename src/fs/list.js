@@ -1,11 +1,11 @@
-import * as fs from "node:fs";
+import * as fs from 'node:fs';
 
 const list = async () => {
-  const dir = "./files";
+  const dir = './src/fs/files';
 
   fs.readdir(dir, (err, files) => {
     if (err) {
-      console.error(new Error("FS operation failed"));
+      console.error(new Error('FS operation failed'));
       return;
     }
 

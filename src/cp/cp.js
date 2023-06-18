@@ -1,7 +1,7 @@
 import { fork } from 'node:child_process';
 
 const spawnChildProcess = async (args) => {
-  const childPath = './files/script.js';
+  const childPath = './src/cp/files/script.js';
   fork(childPath, args);
 };
 

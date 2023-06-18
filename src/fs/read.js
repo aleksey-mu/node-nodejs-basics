@@ -1,11 +1,11 @@
-import * as fs from "node:fs";
+import * as fs from 'node:fs';
 
 const read = async () => {
-  const filePath = "./files/fileToRead.txt";
+  const filePath = './src/fs/files/fileToRead.txt';
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
-      const error = new Error("FS operation failed");
+      const error = new Error('FS operation failed');
 
       console.error(error);
       return;

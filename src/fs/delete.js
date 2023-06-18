@@ -1,13 +1,13 @@
-import * as fs from "node:fs";
+import * as fs from 'node:fs';
 
 const remove = async () => {
-  fs.unlink("./files/fileToRemove.txt", (err) => {
+  fs.unlink('./src/fs/files/fileToRemove.txt', (err) => {
     if (err) {
-      console.error(new Error("FS operation failed"));
+      console.error(new Error('FS operation failed'));
       return;
     }
 
-    console.log("File removed!");
+    console.log('File removed!');
   });
 };
 

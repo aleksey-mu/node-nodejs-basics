@@ -1,9 +1,9 @@
-import * as fs from "node:fs";
+import * as fs from 'node:fs';
 
 const rename = async () => {
-  const wrongFileNamePath = "./files/wrongFilename.txt";
-  const newFileNamePath = "./files/properFilename.md";
-  const errorMsg = "FS operation failed";
+  const wrongFileNamePath = './src/fs/files/wrongFilename.txt';
+  const newFileNamePath = './src/fs/files/properFilename.md';
+  const errorMsg = 'FS operation failed';
 
   fs.access(wrongFileNamePath, (err) => {
     if (err) {
@@ -26,7 +26,7 @@ const rename = async () => {
           console.error(err);
           return;
         }
-        console.log("Rename complete!");
+        console.log('Rename complete!');
       });
     });
   });
